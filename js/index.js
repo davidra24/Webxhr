@@ -8,10 +8,13 @@ function generateRow(nombre, poblacion) {
 
   // Insert a cell in the row at index 0
   const newCell = newRow.insertCell(0);
+  const auxCell = newRow.insertCell(1);
 
   // Append a text node to the cell
   const newText = document.createTextNode(nombre);
+  const auxText = document.createTextNode(poblacion);
   newCell.appendChild(newText);
+  auxCell.appendChild(auxText);
 }
 function handleSave() {
   const nombre = document.getElementById('nombre').value;
