@@ -14,7 +14,7 @@ function generateRow(nombre, poblacion) {
   newCell.appendChild(newText);
 }
 function handleSave() {
-  const nombre = document.getElementById('nombre');
-  const poblacion = document.getElementById('poblacion');
+  const nombre = document.getElementById('nombre').value;
+  const poblacion = document.getElementById('poblacion').value;
   generateRow(nombre, poblacion);
 }
